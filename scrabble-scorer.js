@@ -50,7 +50,7 @@ let newPointStructure = transform(oldPointStructure);
 
 function simpleScorer(word) {
    word = word.toString().toUpperCase();
-   let totalCount = 0;
+   /*let totalCount = 0;
    if (word === '') {
       return 0;
    }
@@ -58,6 +58,8 @@ function simpleScorer(word) {
       totalCount += 1;
    }
    return totalCount;
+   */
+  return word.length;
 
 }
 function vowelBonusScorer(word) {
